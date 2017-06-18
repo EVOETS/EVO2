@@ -1,0 +1,757 @@
+/** COLOR CODES */
+/* Yellow: #F7E100;*/
+/* RED: #FF2A2A */
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700,900');
+html, body {
+	height: 100%;
+	min-height: 100%;
+	/*background-color: #000;*/
+	color: #FFF;
+	font-family: "Muli";
+}
+
+/*NAVIGATION BAR*/
+.navbar.transparent {
+	/*background: rgba(255,255,255,0.15);*/
+	background: transparent;
+	border: none;
+	height: 80px;
+	/*max-width: 90%;  This is a patch, should not be working this way*/
+
+}
+
+
+.navbar-fixed-top.scrolled {
+  background-color: #000 !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar.transparent ul > li > a {
+	color: #FFF;
+	line-height: 50px;
+	/*font-family: "Work Sans";	*/
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.navbar.transparent ul > li > a:visited {
+	color: #FFF;
+}
+
+.navbar.transparent img{
+	margin-left: 60px;
+}
+
+.navbar.transparent ul > li > a:hover {
+	color: rgba(247,231,31,1);
+	/*font-size: 16px;*/
+}
+
+.navbar-right {
+	margin-right: 60px;
+}
+
+.navbar-fixed-bottom {
+	height: 70px;
+}
+
+.navbar-fixed-bottom > .container {
+	margin-left: 10px;
+}
+
+#contoured {
+	/*border: 2px solid #F7E100 ;*/
+	border-radius: 2px;
+	background-color: #F7E100;
+	padding: 8px;
+	color: #000;
+}
+
+#contoured:hover {
+	background-color: yellow;
+	color: #000;
+}
+/*NAVIGATION BAR*/
+
+section {
+	/*height: 100%;*/
+	min-width: 100%;
+	display: inline-block;
+	/*position: absolute;*/
+	/*left: 0;*/
+}
+
+section#banner {
+	height: 100%;
+	min-width: 100%;
+	position: relative;
+	left: 0;
+	background-color: #000;
+	/*background-image: url(../img/header/background_evo_blacked.png);*/
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+
+/*section#banner{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}*/
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h2#main_title {
+	height: 88px;
+	color: #FFF;
+	/*font-family: "Work Sans";	*/
+	font-size: 67px;
+	font-weight: 600;
+	line-height: 62px;
+	text-align: left;
+	/*width: 50%;*/
+}
+
+#title_box {
+	width: 600px;
+	height: auto;
+	top:25%;
+	left: 0;
+	right: 0;
+	margin-left: 60px;
+	/*margin: auto;*/
+	position: absolute;
+}
+
+#title_box > h5 {
+	color: #F7E100;
+}
+
+.row {
+	margin: 0;
+}
+
+.main_div {
+	margin: 0;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+#play_video {
+	margin-top: 150px;
+	/*display: inline-block;*/
+}
+
+#play_video img {
+	/*float: left;*/
+}
+
+#play_video h5 {
+	display: inline-block;
+	font-size: 32px;
+	color: #F7E100;
+}
+
+/*img#play_icon {
+	margin-top: 25%;
+}*/
+
+div#chevron_down {
+	bottom: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: auto;
+}
+
+div#chevron_down > img {
+	width: 20px;
+	margin-bottom: 50px;
+}
+
+
+/*SECTION PROTOTYPE*/
+section#prototype,
+section#equipe,
+section#commanditaires,
+section#donations {
+	min-height: 500px;
+	/*height: 200%;*/
+	margin-top: -10px;
+	background-color: #FFF;
+	padding:40px;
+	/*margin-left: 60px;*/
+	padding-left: 0;
+	font-weight: 600;
+	color: #000;
+}
+
+#prototype > img,
+#commanditaires >img,
+.section_box > img,
+#donations > img {
+	margin-left: 60px;
+	padding-left: 40px;
+}
+
+section h1 {
+   letter-spacing: 11px;
+   margin-left: 8%;
+   color: #000;
+   font-weight: bolder;
+   font-size: 58px;
+   text-transform: uppercase;
+   /*text-align: center; */
+}
+
+#prototype_icons {
+	margin-top: 20px;
+}
+
+.caracteristiques {
+	margin-top: 20px;
+}
+
+.caracteristiques h5 {
+	color: gray;
+	/*text-align: center;*/
+	font-weight: 800;
+}
+
+#prototype_bg {
+	padding: 20px;
+}
+
+
+#prototype_photo {
+	width: 80%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 60px;
+}
+
+section#prototype {
+	height: 900px; /* 100% Remove this when adding second picture on bottom */
+}
+
+.Supermileage_list {
+	color: yellow;
+}
+
+.Supermileage_list > li > p {
+	color: #000;
+}
+
+/*SECTION PROTOTYPE*/
+
+
+/* SECTION EQUIPE */
+
+.touch_screen_presentation {
+	display: none;
+}
+
+section#equipe {
+	background-color: #FFF;
+	min-height: 700px; /* 210% */
+	height: 1500px;
+}
+
+section#equipe h1 {
+	color: #FF2A2A;
+}
+
+
+#photos_membres > div > img {
+	padding: 30px;
+	margin-top: 20px;
+}
+
+.ligne_photo_equipe {
+	margin-top: 60px;
+}
+
+#photo_membres {
+	height: 250px;
+}
+#photo_membres img {
+	/*height: auto;*/
+	/*height: 230px;*/
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+    /*width: 200px;*/
+    /*box-shadow: 10px 10px 5px #888888;*/
+}
+
+div.col-md-4,
+div#effect-1 {
+	height: 100%;
+}
+/*#photo_membres img:hover {
+	opacity: 0.4;
+}*/
+
+.section_box {
+	background-color: rgba(247,231,31,0.8);
+	margin:0;
+	margin-right: -40px;
+	min-height: 150px;
+	height: 380px;
+	padding:2px;
+}
+
+.section_box h4 {
+	/*height: 20px;	*/
+	/*width: 277px;	*/
+	margin-top: 30px;
+	color: #000000;	
+	font-family: Muli;	
+	font-size: 16px;	
+	text-transform: uppercase; 
+	font-weight: 600;	
+	line-height: 20px;
+	text-align: center;
+}
+
+.section_box ul {
+	list-style-type: none;
+	display: inline-block;
+
+}
+
+#domaine_box {
+	max-width: 100%;
+	height: 30px;
+	margin-right: auto;
+	text-align: center;
+	padding: 0;
+	/*display: block;*/
+}
+
+.section_box ul li {
+	float: left;
+	padding-right: 30px;
+	margin-right: 20px;
+	background-color: red;
+	border-radius: 20px 20px 20px 20px;
+	color: #FFF;
+	padding: 10px;
+}
+
+#img_group > img {
+	width: 500px;
+	height: auto;
+}
+
+span.h0 {
+	font-size: 80px;
+	color: #ABB2B9;
+	letter-spacing: 11px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+.desc_membre {
+	text-align: center;
+}
+
+h3.black {
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+h3.white {
+	color: #FFF;
+}
+
+.desc_membre > h6 {
+	font-size: 14px;
+	color: grey;
+}
+
+/* SECTION COMMANDITAIRES */
+section#commanditaires {
+	background-color: #FFF;
+	/*min-height: 220%;*/
+	height: 1200px; /* 220% */
+}
+
+.commanditaires_line {
+	margin-top: 100px;
+}
+
+.commanditaires_line img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* SECTION COMMANDITAIRES */
+
+
+/*SECTION DONATIONS*/
+section#donations {
+	background-image: url(../img/donation/bg-image.png);
+	background-repeat: no-repeat;
+	height: 860px; /* 130% */
+}
+
+#donation_box {
+	height: 733px;	/* Change this to a ratio */
+	width: 100%;	
+	background-color: #FFFFFF;	
+	box-shadow: 2px 5px 8px 0 rgba(0,0,0,0.24);
+	padding: 40px;
+}
+
+#donation_box h1 {
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	margin-left: 0;
+}
+
+#donation_box p {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	/*padding: 20px;*/
+}
+
+#donation_box > div {
+	width: 90%;
+}
+
+#donation_box a {
+	/*text-decoration: underline;*/
+}
+
+#donation_box button {
+	height: 52px;	
+	width: 252px;	
+	border: 1px solid #FF1800;	
+	background-color: #FF1800;	
+	box-shadow: 0 6px 6px 0 rgba(0,0,0,0.15);
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 60px;
+	position:relative;
+    top:50%; 
+    left:30%;
+}
+
+button > a {
+	color: #FFF;
+	text-decoration: none;
+
+}
+
+button > a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+/*SECTION DONATIONS*/
+
+
+
+/*FOOTER*/
+footer {
+	position: relative;
+	margin-top: -150px;
+	height: 290px;
+	clear: both;
+	padding-top: 20px;
+	color: #000;
+	background-color: #FAFAFA;
+}
+
+footer > div {
+	padding:20px;
+	margin-left: 50px;
+}
+
+div#footer_infos {
+	text-align: center;
+	color: rgba(108,108,108,0.5);
+}
+
+.footer_title {
+	height: 13px;	
+	width: 73px;	
+	color: rgba(141,139,140,0.59);	
+	font-family: Muli;	
+	font-size: 10px;	
+	letter-spacing: 2px;	
+	line-height: 13px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h6.footer_section_desc {
+	height: 15px;	
+	width: 347px;	
+	color: #8D8B8C;	
+	font-family: Muli;	
+	font-size: 12px;	
+	line-height: 15px;
+}
+/*FOOTER*/
+
+
+/* Source : http://callmenick.com/_development/image-overlay-hover-effects/ */
+/* ============================================================
+  GLOBAL
+============================================================ */
+.effects {
+  padding-left: 15px;
+}
+.effects .img {
+  position: relative;
+  float: left;
+  margin-bottom: 5px;
+  width: 25%;
+  overflow: hidden;
+}
+.effects .img:nth-child(n) {
+  margin-right: 5px;
+}
+.effects .img:first-child {
+  margin-left: -15px;
+}
+.effects .img:last-child {
+  margin-right: 0;
+  width: 100%;
+}
+.effects .img img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+a.close-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  background-color: #000;
+  cursor: pointer;
+}
+a.close-overlay.hidden {
+  display: none;
+}
+
+a.expand {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  border: solid 5px #fff;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 30px;
+  border-radius: 30px;
+}
+
+
+/* ============================================================
+  EFFECT 1 - SLIDE IN BOTTOM
+============================================================ */
+#effect-1 .overlay {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  /*width: 200px;*/
+}
+#effect-1 .overlay a.expand {
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  margin: 0 auto -50px auto;
+}
+
+#effect-1 .overlay a.expand img {
+  width: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#effect-1 .img.hover .overlay {
+  height: 100%;
+}
+
+
+/* ============================================================
+  MEDIA QUERIES
+============================================================ */
+
+@media screen and (max-device-width: 480px),
+only screen and (min-width : 320px) and (max-width :768px) { 
+	section#equipe {
+		min-height: 2000px;
+		height: 2100px;
+	}
+
+	section#prototype {
+		height: 1500px;
+	}
+
+	section#commanditaires {
+		height: 1400px;
+	}
+
+	section#banner {
+		height: 700px;
+		background-image: url(../img/header/background_evo_blacked.png);
+		background-size: cover;
+	}
+
+	section#banner video,
+	#play_video {
+		display: none;
+	}
+
+	#donation_box {
+		margin-top: 150px;
+		height: 600px;
+	}
+
+	#img_group {
+		margin-top: 50px;
+	}
+
+	.section_box {
+		height: 600px;
+	}
+	.overlay {
+ 	display: none;
+	 }
+}
+
+
+
+@media only screen and (min-width : 320px) and (max-width :768px) {
+
+  .section_box {
+  	height: 700px;
+  }
+
+  section#equipe {
+  	height: 2800px;
+  }
+
+  .overlay {
+ 	display: none;
+ }
+
+}
+
+
+@media only screen and (min-width : 769px) and (max-width :992px) {
+
+	section#prototype {
+	height: 1500px;
+	}
+
+	.section_box {
+	height: 600px;
+	}
+
+	section#equipe {
+	height: 2300px;
+	}
+
+	.overlay {
+	display: none;
+	}
+	.touch_screen_presentation {
+	display: block;
+	}
+
+	#donation_box {
+	margin-top: 100px;
+	height: 600px;
+	}
+
+	#img_group > img {
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	}
+
+}
+
+@media only screen and (min-width : 992px) {
+
+	section#prototype {
+	height: 900px;
+	}
+
+	section#donations {
+	height: 800px;
+	}
+
+	.section_box {
+	height: 420px;
+	}
+
+	section#equipe {
+		height: 2000px;
+	}
+
+/*	.section_box {
+	height: 600px;
+	}*/
+
+	h3.white {
+	font-size: 14px;
+	}
+
+	#img_group > img {
+	width: 100%;
+	}
+
+}
