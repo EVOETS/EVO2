@@ -412,6 +412,7 @@ section#donations {
 	background-image: url(../img/donation/bg-image.png);
 	background-repeat: no-repeat;
 	height: 860px; /* 130% */
+	/*background-size: cover;*/
 }
 
 #donation_box {
@@ -724,7 +725,7 @@ only screen and (min-width : 320px) and (max-width :768px) {
 
 }
 
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 992px) and (max-width: 1824px){
 
 	section#prototype {
 	height: 900px;
@@ -735,7 +736,7 @@ only screen and (min-width : 320px) and (max-width :768px) {
 	}
 
 	.section_box {
-	height: 420px;
+	height: 520px;
 	}
 
 	section#equipe {
@@ -747,7 +748,11 @@ only screen and (min-width : 320px) and (max-width :768px) {
 	}*/
 
 	h3.white {
-	font-size: 14px;
+	font-size: 22px;
+	}
+
+	#desc_membre h6 {
+		font-size: 18px;
 	}
 
 	#img_group > img {
@@ -755,3 +760,22 @@ only screen and (min-width : 320px) and (max-width :768px) {
 	}
 
 }
+
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+	#photo_membres {
+		height: 400px;
+	}
+
+	section#equipe {
+		height: 3000px;
+	}
+
+	section#donations {
+	background-size: cover;
+}
+
+
+}	
+
